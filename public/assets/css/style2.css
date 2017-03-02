@@ -180,25 +180,7 @@ p a:hover {
     color: #ffffff;
     text-decoration: none;
 }
-/*glow for webkit*/
 
-
-#slogan {
-    position: relative;
-    top: -20px;
-    color: red;
-    font-size: 2em;
-    font-family: Calligraffitti;
-    /*
-    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
-    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
-    animation: neon1 1.5s ease-in-out infinite alternate;
-    */
-}
-p a:hover {
-    color: #ffffff;
-    text-decoration: none;
-}
 /*glow for webkit*/
 
 @-webkit-keyframes neon1 {
@@ -394,7 +376,6 @@ li:hover > ul.drop-menu.menu_4 li:nth-child(3) {
 
 /******************************** FIN NAVBAR***********************************/
 
-/********************************* PARTIE HOME ********************************/
 .onglet {
 
     line-height: 50px;
@@ -430,7 +411,7 @@ li:hover > ul.drop-menu.menu_4 li:nth-child(3) {
 }
 
 #centrage1 {
-    margin-left:470px;;
+    margin-left:470px;
 }
 
 #test2 {
@@ -449,16 +430,19 @@ li:hover > ul.drop-menu.menu_4 li:nth-child(3) {
     margin-left: 470px;
 }
 
-#fucku {
-    
-    width: 350px;
-    margin-left: 350px;
-}
-
-
 #container2 {
     transform: scale(0);
 }
+
+ .slider_home {
+        width:100%;
+        margin:auto;
+        margin-top: 30px;
+    }
+.reglage_imagehome {
+    margin-left: 140px;
+}
+
 
 @media screen and (max-width: 425px){
     #container1 {
@@ -467,15 +451,12 @@ li:hover > ul.drop-menu.menu_4 li:nth-child(3) {
     #container2 {
         transform: scale(1);
     }
-
-.slider_home {
-    width:100%;
-    margin:auto;
-    margin-top: 30px;
+    .reglage_imagehome {
+    margin-left: -10px;
+}
 
 
 }
-
 
 /***************************** SLIDER EVENEMENT**********************************************/
 
