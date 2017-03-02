@@ -35,32 +35,11 @@
 
                 <ul class="nav navbar-top-links navbar-right">
                     <?php if(isset($_SESSION['user'])): ?>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                            <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
-                        </a>
-
-                        <ul class="dropdown-menu dropdown-user">
-                            <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
-                            </li>
-                            <li><a href="<?= $this->url('admin_index') ?>"><i class="fa fa-gear fa-fw"></i> Administration</a>
-                            </li>
-                            <li class="divider"></li>
-
-                            <li><a href="<?= $this->url('admin_deconnexion') ?>"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
-                            </li>
-
-                        </ul>
-
+                    <li>
+                        <a href="<?= $this->url('admin_deconnexion') ?>"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                     </li>
-                    <?php else : ?>
-                    <!-- Button trigger modal -->
-                    <li><a href="<?= $this->url('login') ?>"><i class="fa fa-sign-in fa-fw"></i> Connexion</a></li>
-                    <!-- /.dropdown-user -->
-                    <?php endif; ?>
-                    <!-- /.dropdown -->
-                </ul>
 
+                </ul>
                 <!-- /.navbar-top-links -->
 
                 <div class="navbar-default sidebar" role="navigation">
@@ -78,38 +57,23 @@
                                 <!-- /input-group -->
                             </li>
                             <li>
-                                <a href="<?php echo $this->url('default_home'); ?>"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                                <a href="<?php echo $this->url('default_home'); ?>"><i class="fa fa-home" aria-hidden="true"></i> Accès au site</a>
                             </li>
-                            <li>
-                                <a href="<?php echo $this->url('default_about'); ?>"><i class="fa fa-list" aria-hidden="true"></i> A propos</a>
-                            </li>
-<!--
+
                             <li>
                                 <a href="<?php echo $this->url('user_listUser'); ?>"><i class="fa fa-list" aria-hidden="true"></i> Tous les utilisateurs</a>
                             </li>
                             <li>
                                 <a href="<?php echo $this->url('user_addUser'); ?>"><i class="fa fa-list" aria-hidden="true"></i> Ajouter un utilisateur</a>
                             </li>
--->
-                            <li>
-                                <a href="<?php echo $this->url('default_contact'); ?>"><i class="fa fa-user-plus" aria-hidden="true"></i> Contact</a>
-                            </li>
-
                         </ul>
                     </div>
                     <!-- /.sidebar-collapse -->
                 </div>
                 <!-- /.navbar-static-side -->
             </nav>
-
+            <?php endif; ?>
             <div id="page-wrapper">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="page-header"><?= $this->e($title) ?></h1>
-                    </div>
-                    <!-- /.col-lg-12 -->
-                </div>
-                <!-- /.row -->
                 <div class="row">
                     <?= $this->section('main_content') ?>
                 </div>
