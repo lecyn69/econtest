@@ -156,12 +156,31 @@ effet d'explosion du cube
     from { -webkit-transform: rotateY(0deg) rotateZ(0deg); }
     to { -webkit-transform: rotateY(360deg) rotateZ(360deg); }
 }
-
 @keyframes rotate-cube
 {
     from { transform: rotateY(0deg) rotateZ(0deg); }
     to { transform: rotateY(360deg) rotateZ(360deg); }
 }
+
+
+#slogan {
+    position: relative;
+    color: red;
+    font-family: Calligraffitti;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 50px;
+    /*
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+    */
+}
+p a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+/*glow for webkit*/
 
 /*Neon*/
 p {
