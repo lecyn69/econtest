@@ -21,14 +21,12 @@
 		['GET', '/events/', 'Default#events', 'default_Events'],
 		['GET', '/actu/', 'Default#actu', 'default_Actu'],
         
-        
-        
-        
-        
-        
         //*************************Partie administration*****************************//
         
         ['GET', '/admin/', 'admin#index', 'admin_index'],
+
+        ['GET', '/admin/connexion/', 'admin#connexionAdmin', 'admin_connexionAdmin'],
+        ['GET', '/admin/accueil/', 'admin#accueil', 'admin_accueil'],
         ['GET|POST', '/inscription/', 'admin#inscription', 'admin_inscription'],
         ['GET|POST', '/connexion/', 'admin#connexion', $w_config['security_login_route_name']],
         ['GET|POST', '/deconnexion/', 'admin#deconnexion', 'admin_deconnexion'],
