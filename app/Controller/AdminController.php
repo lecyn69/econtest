@@ -22,6 +22,10 @@ class AdminController extends Controller {
     {
         $this->show('admin/index');
     }
+    public function accueil()
+    {
+        $this->show('admin/accueil');
+    }
     public function inscription(){
 
         if(!isset($_POST['pseudo'])){
@@ -30,12 +34,12 @@ class AdminController extends Controller {
             $isAjaxRequest = (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && $_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest') ? true : false;
             try{
                 $_POST['password'] = $this->auth->hashpassword($_POST['password']);
-                $_POST['role'] = 'admin';
+                $_POST['role'] = 'visitor';
                 $newUser = $this->currentUser->insert($_POST);
                 if($newUser){
                     $this->auth->logUserIn($newUser);
                 }
-                
+
             }catch(\PDOException $e){
                 if($isAjaxRequest){
                     http_response_code(500) ;
@@ -93,35 +97,14 @@ class AdminController extends Controller {
     }
     public function connexionAdmin(){
 
-        $app = getApp();
 
-        if($_SERVER['REQUEST_METHOD'] === 'POST'){
-            $isAjaxRequest = (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && $_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest') ? true : false;
-            if($isAjaxRequest){
-                $user = $this->auth->isValidLoginInfo($_POST['pseudoOrEmail'], $_POST['pwd']);
-                if($user){
-                    $this->auth->logUserIn($this->currentUser->find($user));
-                    $this->showJson(['erreur'=> false, 'message'=>'Connexion réussie !']);
-                }else{
-                    $this->showJson(['erreur'=> true, 'message'=>'Mot de passe ou email incorrect']);
-                }
-
-            }else{
-
-                $user = $this->auth->isValidLoginInfo($_POST['pseudoOrEmail'], $_POST['pwd']);
-                if($user){
-                    $this->auth->logUserIn($this->currentUser->find($user));
-                    $this->redirectToRoute('admin_index');
-                }else{
-                    $_SESSION['error'] = 'Mot de passe ou email incorrect';
-                    $this->redirectToRoute($app->getConfig('security_login_route_name'));
-                }
-            }
-        }
-
-        if($_SERVER['REQUEST_METHOD'] === 'GET'){
-            $loginRoute = $app->getConfig('security_login_route_name');
-            $this->show('default/connexion',['loginRoute'=> $loginRoute]);
+        $user = $this->auth->isValidLoginInfo($_POST['pseudoOrEmail'], $_POST['pwd']);
+        if($user){
+            $this->auth->logUserIn($this->currentUser->find($user));
+            $this->redirectToRoute('default_home');
+        }else{
+            $_SESSION['error'] = 'Mot de passe ou email incorrect';
+            $this->redirectToRoute('default_home');
         }
     }
 
