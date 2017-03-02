@@ -29,7 +29,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<?php echo $this->url('default_home'); ?>">Micron</a>
+                    <a class="navbar-brand" href="<?php echo $this->url('admin_index'); ?>">E-Contest</a>
                 </div>
                 <!-- /.navbar-header -->
 
