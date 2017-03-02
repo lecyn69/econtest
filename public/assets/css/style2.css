@@ -182,33 +182,7 @@ p a:hover {
 }
 /*glow for webkit*/
 
-/*Neon*/
-#econtest {
-    text-align: center;
-    font-size: 5em;
-    margin-top: 50px;
-}
 
-a {
-    text-decoration: none;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
-}
-#econtest:nth-child(1) a {
-    color: #fff;
-    font-family: Monoton;
-    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
-    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
-    animation: neon1 1.5s ease-in-out infinite alternate;
-}
-
-#econtest:nth-child(1) a:hover {
-    color: red;
-    -webkit-animation: none;
-    -moz-animation: none;
-    animation: none;
-}
 @-webkit-keyframes neon1 {
     from {
         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px red, 0 0 70px red, 0 0 80px red, 0 0 100px red, 0 0 150px rgba(219, 39, 39, 0.77);
@@ -456,3 +430,30 @@ li:hover > ul.drop-menu.menu_4 li:nth-child(3) {
 }
 
 /************************************FIN PAGE GAMES ****************************/
+
+/*Neon*/
+#econtest {
+    text-align: center;
+    font-size: 5em;
+    margin-top: 50px;
+}
+a {
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+#econtest:nth-child(1) a {
+    color: #fff;
+    font-family: Monoton;
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+#econtest:nth-child(1) a:hover {
+    color: red;
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+}
