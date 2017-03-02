@@ -202,9 +202,6 @@ p:nth-child(1) a:hover {
     animation: neon1 1.5s ease-in-out infinite alternate;
     */
 }
-
-
-
 p a:hover {
     color: #ffffff;
     text-decoration: none;
