@@ -13,9 +13,7 @@
         <link rel="stylesheet" href="<?= $this->assetUrl('vendor/font-awesome/css/font-awesome.min.css') ?>">
         <link rel="stylesheet" href="<?= $this->assetUrl('vendor/bootstrap/css/bootstrap.min.css') ?>">
         <link rel="stylesheet" href="<?= $this->assetUrl('css/style2.css') ?>">
-
     </head>
-
     <body>
         <header>
             <div id="cube">
@@ -23,16 +21,13 @@
                     E-Contest
                     </a></p>
                 <div class="stage centered">
-                    <div class="cube">
-                        
-                        
-                        
+                    <div class="cube">                                          
                         <img class="cubeface" id="face1" src="<?=$this->assetUrl('img/ps4.jpg') ?>" />
-                    <img class="cubeface" id="face2" src="<?= $this->assetUrl('img/csgo.jpg')?>" />
-                    <img class="cubeface" id="face3" src="<?= $this->assetUrl('img/xbox.jpg')?>" />
-                    <img class="cubeface" id="face4" src="<?= $this->assetUrl('img/pc.jpg')?>" />
-                    <img class="cubeface" id="face5" src="<?= $this->assetUrl('img/lol.jpg')?>" />
-                    <img class="cubeface" id="face6" src="<?= $this->assetUrl('img/dota.jpg')?>" />
+                        <img class="cubeface" id="face2" src="<?= $this->assetUrl('img/csgo.jpg')?>" />
+                        <img class="cubeface" id="face3" src="<?= $this->assetUrl('img/xbox.jpg')?>" />
+                        <img class="cubeface" id="face4" src="<?= $this->assetUrl('img/pc.jpg')?>" />
+                        <img class="cubeface" id="face5" src="<?= $this->assetUrl('img/lol.jpg')?>" />
+                        <img class="cubeface" id="face6" src="<?= $this->assetUrl('img/dota.jpg')?>" />
                     </div>
                 </div>
             </div>
