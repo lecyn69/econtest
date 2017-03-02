@@ -156,12 +156,31 @@ effet d'explosion du cube
     from { -webkit-transform: rotateY(0deg) rotateZ(0deg); }
     to { -webkit-transform: rotateY(360deg) rotateZ(360deg); }
 }
-
 @keyframes rotate-cube
 {
     from { transform: rotateY(0deg) rotateZ(0deg); }
     to { transform: rotateY(360deg) rotateZ(360deg); }
 }
+
+
+#slogan {
+    position: relative;
+    color: red;
+    font-family: Calligraffitti;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 50px;
+    /*
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+    */
+}
+p a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+/*glow for webkit*/
 
 /*Neon*/
 #econtest {
@@ -190,25 +209,6 @@ a {
     -moz-animation: none;
     animation: none;
 }
-#slogan {
-    position: relative;
-    color: red;
-    font-family: Calligraffitti;
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 50px;
-    /*
-    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
-    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
-    animation: neon1 1.5s ease-in-out infinite alternate;
-    */
-}
-p a:hover {
-    color: #ffffff;
-    text-decoration: none;
-}
-/*glow for webkit*/
-
 @-webkit-keyframes neon1 {
     from {
         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px red, 0 0 70px red, 0 0 80px red, 0 0 100px red, 0 0 150px rgba(219, 39, 39, 0.77);
