@@ -30,7 +30,7 @@ class AdminController extends Controller {
             $isAjaxRequest = (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && $_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest') ? true : false;
             try{
                 $_POST['password'] = $this->auth->hashpassword($_POST['password']);
-                $_POST['role'] = 'admin';
+                $_POST['role'] = 'visitor';
                 $newUser = $this->currentUser->insert($_POST);
                 if($newUser){
                     $this->auth->logUserIn($newUser);
