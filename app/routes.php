@@ -29,8 +29,8 @@
         //*************************Partie administration*****************************//
         
         ['GET', '/admin/', 'admin#index', 'admin_index'],
-        ['GET|POST', '/inscription/', 'admin#inscription', 'admin_inscription'],
-        ['GET|POST', '/connexion/', 'admin#connexion', $w_config['security_login_route_name']],
+        ['GET|POST', '/inscription/', 'default#inscription', 'default_inscription'],
+        ['GET|POST', '/connexion/', 'default#connexion', $w_config['security_login_route_name']],
         ['GET|POST', '/deconnexion/', 'admin#deconnexion', 'admin_deconnexion'],
         // route avec paramètres dynamiques:
         //          - i , attend un entier

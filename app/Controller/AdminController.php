@@ -53,7 +53,7 @@ class AdminController extends Controller {
             }
         }
     }
-    public function connexion(){
+    public function connexionAdmin(){
 
         $app = getApp();
 
@@ -87,7 +87,7 @@ class AdminController extends Controller {
         }
     }
 
-    public function deconnexion(){
+    public function deconnexionAdmin(){
         $this->auth->logUserOut();
         $this->redirectToRoute('default_home');
     }

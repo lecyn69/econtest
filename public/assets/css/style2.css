@@ -156,40 +156,33 @@ effet d'explosion du cube
     from { -webkit-transform: rotateY(0deg) rotateZ(0deg); }
     to { -webkit-transform: rotateY(360deg) rotateZ(360deg); }
 }
-
 @keyframes rotate-cube
 {
     from { transform: rotateY(0deg) rotateZ(0deg); }
     to { transform: rotateY(360deg) rotateZ(360deg); }
 }
 
-/*Neon*/
-p {
-    text-align: center;
-    font-size: 5em;
-    margin-top: 50px;
-}
 
-a {
-    text-decoration: none;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
-}
-p:nth-child(1) a {
-    color: #fff;
-    font-family: Monoton;
+#slogan {
+    position: relative;
+    color: red;
+    font-family: Calligraffitti;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 50px;
+    /*
     -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
     -moz-animation: neon1 1.5s ease-in-out infinite alternate;
     animation: neon1 1.5s ease-in-out infinite alternate;
+    */
 }
+p a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+/*glow for webkit*/
 
-p:nth-child(1) a:hover {
-    color: red;
-    -webkit-animation: none;
-    -moz-animation: none;
-    animation: none;
-}
+
 #slogan {
     position: relative;
     top: -20px;
@@ -202,9 +195,6 @@ p:nth-child(1) a:hover {
     animation: neon1 1.5s ease-in-out infinite alternate;
     */
 }
-
-
-
 p a:hover {
     color: #ffffff;
     text-decoration: none;
@@ -498,6 +488,7 @@ li:hover > ul.drop-menu.menu_4 li:nth-child(3) {
 
 }
 
+
 .slider {
     width:100%;
     margin:auto;
@@ -512,3 +503,33 @@ li:hover > ul.drop-menu.menu_4 li:nth-child(3) {
     color: white;
     text-shadow: 5px 5px 15px red;
 }
+
+/************************************FIN PAGE GAMES ****************************/
+
+/*Neon*/
+#econtest {
+    text-align: center;
+    font-size: 5em;
+    margin-top: 50px;
+}
+a {
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+#econtest:nth-child(1) a {
+    color: #fff;
+    font-family: Monoton;
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+#econtest:nth-child(1) a:hover {
+    color: red;
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+}
+
