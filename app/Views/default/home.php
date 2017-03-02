@@ -1,8 +1,6 @@
 <?php $this->layout('layout', ['title' => 'Accueil']) ?>
 
 <?php $this->start('main_content') ?>
-
-<body>
     <div class="slider_home">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <!-- Indicators 
@@ -15,19 +13,19 @@
             Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active reglage_imagehome">
-                    <img src="<?=$this->assetUrl('img/sliderhome1.jpg') ?>" alt="...">
+                    <img src="<?=$this->assetUrl('img/sliderhome1.jpg') ?>" alt="league of legend" class="img-responsive">
                     <div class="carousel-caption nom">
 
                     </div>
                 </div>
-                <div class="item">
-                    <img src="<?=$this->assetUrl('#') ?>" alt="...">
+                <div class="item reglage_imagehome">
+                    <img src="<?=$this->assetUrl('img/sliderhome2.jpg') ?>" alt="..." class="img-responsive">
                     <div class="carousel-caption nom">
 
                     </div>
                 </div>
-                <div class="item">
-                    <img src="<?=$this->assetUrl('#') ?>" alt="...">
+                <div class="item reglage_imagehome">
+                    <img src="<?=$this->assetUrl('img/sliderhome3.jpg') ?>" alt="..." class="img-responsive">
                     <div class="carousel-caption nom">
 
                     </div>
@@ -75,7 +73,7 @@
                 <i class="texte_mon_article">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<span>Lire la suite</span> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</i>
             </article>
             </div>
-        </body>
+    
 
     <?php $this->stop('main_content') ?>
     <?php $this->start('script') ?>
