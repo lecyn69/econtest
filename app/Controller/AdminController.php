@@ -20,10 +20,12 @@ class AdminController extends Controller {
 	 */
     public function index()
     {
+        $this->allowTo('admin');
         $this->show('admin/index');
     }
     public function accueil()
     {
+        $this->allowTo('admin');
         $this->show('admin/accueil');
     }
     public function inscription(){
