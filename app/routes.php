@@ -24,9 +24,7 @@
         //*************************Partie administration*****************************//
         
         ['GET', '/admin/', 'admin#index', 'admin_index'],
-
-        ['GET', '/admin/connexion/', 'admin#connexionAdmin', 'admin_connexionAdmin'],
-        ['GET', '/admin/accueil/', 'admin#accueil', 'admin_accueil'],
+        ['GET', '/admin/listUser/', 'user#listAllUser', 'admin_listUser'],
         ['GET|POST', '/inscription/', 'admin#inscription', 'admin_inscription'],
         ['GET|POST', '/connexion/', 'admin#connexion', $w_config['security_login_route_name']],
         ['GET|POST', '/deconnexion/', 'admin#deconnexion', 'admin_deconnexion'],

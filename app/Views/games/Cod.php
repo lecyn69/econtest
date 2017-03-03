@@ -6,7 +6,7 @@
 
     <div id="description">
 
-        <img id="gamelogo" src="<?= $this->assetUrl('img/bo3logo.jpg') ;?>">
+        <img  id="gamelogo" src="<?= $this->assetUrl('img/bo3logo.jpg') ;?>">
 
         <p id="gamedesc">Call of Duty: Black Ops III est un jeu vidéo de tir à la première personne développé par le studio Treyarch et édité par Activision, sorti le 6 novembre 2015 sur Microsoft Windows, Xbox One, PlayStation 4, PlayStation 3 et Xbox 360. Il s'agit du 12e épisode de la franchise Call of Duty et le 3e opus "principal" de la saga Black Ops. La campagne, le mode multijoueur et le mode Zombies de Black Ops III ont été entièrement remaniés. La campagne prend en charge jusqu'à quatre joueurs en coopératif, un soldat entièrement personnalisable, et prend en charge la rejouabilité pour trouver tous les moyens possibles pour passer un niveau à l'autre. Le multijoueur introduit un nouveau système de mouvement, un nouveau système de classes appelé « Spécialistes », et une nouvelle fonction de « Gunsmith » qui permet de créer des combinaisons d'armes et aussi un design de Camo. Enfin, les zombies reviennent avec un tout nouveau récit séparé de la campagne.</p>
 

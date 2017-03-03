@@ -21,7 +21,7 @@
             <div id="cube">
                 <div id="site_name">
                     <p id="econtest"><a href="<?php echo $this->url('default_home'); ?>">E-Contest</a></p>
-                    <p id="slogan"><span>The Place to be for Gamers</span></p>
+                    <p id="slogan" class="text-center"><span>The Place to be for Gamers</span></p>
                 </div>
                 <div class="stage centered">
                     <div class="cube">
@@ -287,7 +287,7 @@
                         success: function(data){ // Si le status code est 200
                             console.log(data);
                             $('.modal-header').append('<p class="alert-success">'+data.message+'</p>');
-                            window.location.href = '<?= $this->url('admin_index'); ?>';
+                            window.location.href = '<?= $this->url('default_home'); ?>';
                         },
                         error: function(data){ // Si le status code n'est pas 200
                             //console.log(jqXhr);
