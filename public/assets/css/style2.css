@@ -168,6 +168,7 @@ effet d'explosion du cube
     color: red;
     font-size: 2em;
     font-family: Calligraffitti;
+    text-align: center;
     /*
     -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
     -moz-animation: neon1 1.5s ease-in-out infinite alternate;
@@ -395,10 +396,15 @@ li:hover > ul.drop-menu.menu_4 li:nth-child(3) {
     width: 75%;
     margin:auto;
     margin-top: 30px;
-
-
 }
 
+@media screen and (max-width: 425px){
+    .slider {
+    width: 100%;
+    margin:auto;
+    margin-top: 30px;
+}
+}
 /************************************PARTIE HOME********************************/
 
 
@@ -469,39 +475,8 @@ li:hover > ul.drop-menu.menu_4 li:nth-child(3) {
 
 
 /*PARTIE HOME RESPONSIVE*/
-@media screen and (max-width: 1440px){
-    .reglage_imagehome {
-        margin-left: 120px;
-    }
-}
-
-@media screen and (max-width: 1199px){
-    .reglage_imagehome {
-        margin-left: 0px;
-    }
-    .div_align {
-        /*width: 80px;*/
-    }
-}
-
-
-
-.slider_home {
-    width:100%;
-    margin:auto;
-    margin-top: 30px;
-}
-
-@media screen and (max-width: 1024px){
-    .reglage_imagehome {
-        margin-left: 10px;
-    }
-}
-
 @media screen and (max-width: 768px){
-    .reglage_imagehome {
-        margin-left: -10px;
-    }
+    
     #lire_la_suite {
         cursor: pointer;
     }
@@ -528,15 +503,6 @@ li:hover > ul.drop-menu.menu_4 li:nth-child(3) {
         transform: scale(1); 
     }
 
-    .reglage_imagehome {
-        margin-left: -10px;
-    }
-
-
-
-    .reglage_imagehome {
-        margin-left: -10px;
-    }
     #lire_la_suite {
         cursor: pointer;
     }
@@ -677,9 +643,13 @@ a {
 
 
 
-/********************SIDEBAR MENU ADMIN ***********************************/
+/******************** NAV MENU ADMIN ***********************************/
+.nav-admin {
+    width: auto;
+}
 
- /********************************FIN SIDEBAR ADMIN *******************************/
+
+ /******************************** FIN NAV ADMIN *******************************/
 /****************************** PARTIE LIST USER ADMIN **********************/
 
 

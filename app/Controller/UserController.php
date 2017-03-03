@@ -32,7 +32,7 @@ class UserController extends Controller {
         $user = new user;
         $user->delete($_POST['id']);
         $_SESSION['message'] = "l'utilisateur à été supprimé";
-        $this->redirectToRoute('user_listUser');
+        $this->redirectToRoute('admin_listUser');
     }
     public function listAllUser(){
         $user = new user;
