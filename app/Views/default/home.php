@@ -83,14 +83,12 @@ Wrapper for slides -->
             <p id="lire_la_suite1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lire la suite :</p><p id="affichage_suite1">"<b>Onglet2</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
         </article>
     </section>
-
     <section class="row">
         <article class="col-md-12">
             <h2 class="mon_article">Article 3</h2>
             <p id="lire_la_suite2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lire la suite :</p><p id="affichage_suite2">"<b>Onglet2</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
         </article>
     </section>
-
     <section class="row">
         <article class="col-md-12">
             <h2 class="mon_article">Article 4</h2>
