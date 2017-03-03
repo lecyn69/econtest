@@ -457,11 +457,11 @@ li:hover > ul.drop-menu.menu_4 li:nth-child(3) {
 }
 
 
- .slider_home {
-        width:100%;
-        margin:auto;
-        margin-top: 30px;
-    }
+.slider_home {
+    width:100%;
+    margin:auto;
+    margin-top: 30px;
+}
 .reglage_imagehome {
     margin-left: 140px;
 }
@@ -475,8 +475,8 @@ li:hover > ul.drop-menu.menu_4 li:nth-child(3) {
         transform: scale(1);
     }
     .reglage_imagehome {
-    margin-left: -10px;
-}
+        margin-left: -10px;
+    }
 
 
 }
@@ -499,9 +499,13 @@ legend {
     font-size: 20pt;
     font-family: 'Lobster Two', cursive;
     color: white;
-    
-    
 }
+.actif {
+    box-shadow: -2px -3px 10px 4px white;
+    margin-bottom: 50px;
+    padding: 0px;
+}
+/*****************************FIN ACTU *****************************/
 /*****************************PAGE GAMES ***************************/
 
 #desc_logo {
@@ -509,8 +513,6 @@ legend {
     padding:0px;
     margin-left: 50px;
     margin-top: 110px;
-     
-    
 }
 
 #logo {
@@ -518,12 +520,12 @@ legend {
     box-shadow: 3px 3px 3px 3px white;
     width: 28%;
     height: 380px;
-    
+
 }
 
 #logo_desc {
     margin-bottom: 50px;
-   
+
 }
 
 #desc_eligue {
@@ -547,9 +549,9 @@ legend {
 
 
 #desc_logo_entier {
-     font-size: 14pt;
+    font-size: 14pt;
     padding:0px;
-    
+
     margin-top: 50px;
 }
 
@@ -584,6 +586,3 @@ a {
 }
 
 
-#desc_logo_entier {
-    
-}
