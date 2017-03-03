@@ -54,20 +54,21 @@
                         <ul class="nav" id="side-menu">
 
                             <li>
-                                <a href="<?php echo $this->url('admin_accueil'); ?>"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                                <a href="<?php echo $this->url('admin_index'); ?>"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
                             </li>
                             <li>
                                 <a href="<?php echo $this->url('default_home'); ?>"><i class="fa fa-list" aria-hidden="true"></i> Accès au site</a>
                             </li>
 
-                            <!--
-<li>
-<a href="<?php echo $this->url('user_listUser'); ?>"><i class="fa fa-list" aria-hidden="true"></i> Tous les utilisateurs</a>
-</li>
-<li>
-<a href="<?php echo $this->url('user_addUser'); ?>"><i class="fa fa-list" aria-hidden="true"></i> Ajouter un utilisateur</a>
-</li>
--->
+
+
+                            <li>
+                                <a href=""><i class="fa fa-list" aria-hidden="true"></i> Tous les utilisateurs</a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa fa-list" aria-hidden="true"></i> Ajouter un utilisateur</a>
+                            </li>
+
 
                         </ul>
                     </div>
