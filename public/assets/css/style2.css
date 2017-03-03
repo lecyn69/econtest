@@ -487,6 +487,7 @@ li:hover > ul.drop-menu.menu_4 li:nth-child(3) {
     font-family: 'Lobster Two', cursive;
     color: white;
     text-shadow: 5px 5px 15px red;
+    text-align: center;
 }
 /*******************************FIN EVENTS *************************************/
 

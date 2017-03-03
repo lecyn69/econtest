@@ -2,7 +2,7 @@
 
 <?php $this->start('main_content') ?>
 <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
-<p class="titre">Evenements à venir</p>
+<p class="titre text-center">Evenements à venir</p>
 
 <div class="slider">
 
