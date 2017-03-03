@@ -503,50 +503,56 @@ legend {
     
 }
 /*****************************PAGE GAMES ***************************/
-#description{
-    background-color: #f8f8f8;
+
+#desc_logo {
+    font-size: 15pt;
+    padding:0px;
+    margin-left: 50px;
+    margin-top: 110px;
+     
+    
 }
 
-#gamelogo {
-    width: 171px;
-    height: 171px;
-    display: inline-block;
-    vertical-align: top;
+#logo {
+    padding:0px;
+    box-shadow: 3px 3px 3px 3px white;
+    width: 28%;
+    height: 380px;
+    
 }
 
-#gamedesc {
-    display: inline-block;
-    width: 80%;
-    margin-left: 2%;
-    margin-top: 1.3%;
+#logo_desc {
+    margin-bottom: 50px;
+   
 }
 
-.tournaments{
-    border: 1px solid #333;
-    margin-top: 4%;
-    background-color: #f8f8f8;
-}
-
-#tourndesc{
-    width: 35%;
+#desc_eligue {
+    font-size: 12pt;
+    padding: 0px; 
     margin-left: 20px;
-    margin-top: 5px;
-    display: inline-block;
 }
 
-#tournlogo{
-    width: 60%;
-    height: 255px;
-    display: inline-block;
-    margin: auto;
-    float: right;
+#eligue {
+    margin-bottom: 50px;
 }
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+#logo-eligue,#logo-tournoi {
+    padding: 0px;
+    border:2px solid red;
 }
+
+#desc_eligue, #desc_tournoi {
+    font-size: 11.5pt;
+}
+
+
+#desc_logo_entier {
+     font-size: 14pt;
+    padding:0px;
+    
+    margin-top: 50px;
+}
+
 
 /************************************FIN PAGE GAMES ****************************/
 
@@ -577,3 +583,7 @@ a {
     animation: none;
 }
 
+
+#desc_logo_entier {
+    
+}
