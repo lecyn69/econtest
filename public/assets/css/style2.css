@@ -433,6 +433,7 @@ li:hover > ul.drop-menu.menu_4 li:nth-child(3) {
 #container2 {
     transform: scale(0);
 }
+<<<<<<< HEAD
 
  .slider_home {
         width:100%;
@@ -483,6 +484,12 @@ li:hover > ul.drop-menu.menu_4 li:nth-child(3) {
     font-family: 'Lobster Two', cursive;
     color: white;
     text-shadow: 5px 5px 15px red;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+
 }
 
 /************************************FIN PAGE GAMES ****************************/
