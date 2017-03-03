@@ -24,11 +24,11 @@
                 </div>
                 <div class="stage centered">
                     <div class="cube">
-                        <img class="cubeface" id="face1" src="<?=$this->assetUrl('img/ps4.jpg') ?>" />
-                        <img class="cubeface" id="face2" src="<?= $this->assetUrl('img/csgo.jpg')?>" />
+                        <img class="cubeface" id="face1" src="<?=$this->assetUrl('img/ps4-cube.png') ?>" />
+                        <img class="cubeface" id="face2" src="<?= $this->assetUrl('img/gamecube.jpg')?>" />
                         <img class="cubeface" id="face3" src="<?= $this->assetUrl('img/xbox.jpg')?>" />
-                        <img class="cubeface" id="face4" src="<?= $this->assetUrl('img/pc.jpg')?>" />
-                        <img class="cubeface" id="face5" src="<?= $this->assetUrl('img/lol.jpg')?>" />
+                        <img class="cubeface" id="face4" src="<?= $this->assetUrl('img/nitendocube.png')?>" />
+                        <img class="cubeface" id="face5" src="<?= $this->assetUrl('img/segacub.jpg')?>" />
                         <img class="cubeface" id="face6" src="<?= $this->assetUrl('img/dota.jpg')?>" />
                     </div>
                 </div>
