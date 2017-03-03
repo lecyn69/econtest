@@ -1,8 +1,8 @@
-<?php $this->layout('backend', ['title' => ' Gestion des utilisateurs']) ?>
+<?php $this->layout('LayoutAdmin', ['title' => ' Gestion des utilisateurs']) ?>
 
 <?php $this->start('main_content') ?>
 
-	<div class="col-lg-12">
+	<div class="col-lg-10 col-lg-offset-1">
     <div class="panel panel-default">
         <div class="panel-heading">
             Liste des Utilisateur
@@ -18,8 +18,11 @@
                 <thead>
                     <tr>
                         <th>ID</th>
+                        <th>Nom</th>
+                        <th>Prénom</th>
                         <th>Pseudo</th>
                         <th>Email</th>
+                        <th>Rôle</th>
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -28,14 +31,17 @@
                     foreach($users as $user) { ?>
                     <tr>
                         <td><?php echo $user['id']; ?></td>
+                        <td><?php echo $user['nom']; ?></td>
+                        <td><?php echo $user['prenom']; ?></td>
                         <td><?php echo $user['pseudo']; ?></td>
                         <td><?php echo $user['email']; ?></td>
+                        <td><?php echo $user['role']; ?></td>
                         <td>
-                            <form style="display: inline-block" method="post" action="<?php echo $this->url('user_deleteUser',['id' => $user['id']]); ?>">
+                            <form style="display: inline-block" method="post" action="<?php echo $this->url('admin_deleteUser',['id' => $user['id']]); ?>">
                                 <input type="hidden" name="id" value="<?php echo $user['id']; ?>">
                                 <button type="submit" class="btn btn-danger">Supprimer</button>
                             </form>
-                           <a style="color:yellow" href="<?php echo $this->url('user_modifUser',['id' => $user['id']]); ?>" class="btn btn-primary">Modifier</a>
+                           <a style="color:yellow" href="<?php echo $this->url('admin_modifUser',['id' => $user['id']]); ?>" class="btn btn-primary">Modifier</a>
                         
                         </td>
                     </tr>
