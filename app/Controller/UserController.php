@@ -17,10 +17,10 @@ class UserController extends Controller {
 
     public function modifUser($id){
 
-        if(!isset($_POST['username'])){
+        if(!isset($_POST['pseudo'])){
             $user = new user;
             $user = $user->find($id);
-            $this->show('admin/user/Utilisateur', ['user' => $user]);
+            $this->show('admin/user/modifUser', ['user' => $user]);
         }
         else{
             $user = new user;
@@ -38,5 +38,19 @@ class UserController extends Controller {
         $user = new user;
         $listUser = $user->findAll('id');
         $this->show('admin/user/listUser', array('users' => $listUser));
+    }
+    public function addUser(){
+        $this->allowTo('admin');
+
+
+        if(!isset($_POST['pseudo'])){
+            $this->show('admin/user/Utilisateur');
+        }else{
+            $user = new user;
+            $_POST['password'] = $this->auth->hashpassword($_POST['password']);
+            $_POST['role'] = 'admin';
+            $user->insert($_POST);
+            $this->redirectToRoute('user_listUser');  
+        }
     }
 }
