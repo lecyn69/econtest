@@ -504,7 +504,7 @@ legend {
 }
 /*****************************PAGE GAMES ***************************/
 #description{
-    background-color: #f8f8f8;
+  /*  background-color: #f8f8f8;*/
 }
 
 #gamelogo {
@@ -524,7 +524,7 @@ legend {
 .tournaments{
     border: 1px solid #333;
     margin-top: 4%;
-    background-color: #f8f8f8;
+/*    background-color: #f8f8f8;*/
 }
 
 #tourndesc{

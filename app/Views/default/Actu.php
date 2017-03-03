@@ -9,9 +9,13 @@
     <p class="col-md-12">Retrouvez ici les dernières actualités </p>
     <div class="col-md-12">
 
-        <p class="col-md-12  ">TITRE</p>
-        <img class="col-md-6" src="<?=$this->assetUrl('img/battlefield-event.jpg') ?>">
-        <p class="col-md-6">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
+        <p class="col-md-12  ">Les Invités Du Kiev Major</p>
+        <img class="col-md-6" src="<?=$this->assetUrl('img/kievmajor.png') ?>">
+        <p class="col-md-6">Le prochain Major est sur l'horizon pour Dota2, et Valve s'apprete à annoncer les equipes invités a Kiev cet avril pour une chance a gagner la trophée mystique et etre engravée dans l'avant-guarde des élites de Dota.
+
+Les huits dernières equipes seront décidés dans les qualifications regionales. Alors que la Chine et L'Asie du Sud-Est mantiennent leurs deux places de qualification, les qualifications Européenesont été divisé en deux: Europe et CIS, ainsi que les qualifications Américaines, en Amérique-du-Nord et Amérique-du-Sud, qui laisse une place pour chacune de ces régions. 
+
+Les qualifications open pour le Kiev Major seront tenus du 6 au 9 Mars, et les qualifications régionaux suivront le 10 au 13 Mars. Les 8 équipes gagnantes iront au Kiev Major et seront en compétition contre les invités le 27 au 30 Avril au Palace Nationale des Arts en Ukraine.</p>
 
 
 
@@ -21,9 +25,14 @@
 
     <div class="col-md-12">
 
-        <p class="col-md-12 text-left">TITRE</p>
-        <img class="col-md-6" src="<?=$this->assetUrl('img/battlefield-event.jpg') ?>">
-        <p class="col-md-6">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
+        <p class="col-md-12 text-left">Mis à jour PBE: Changements au balance plus tentatives</p>
+        <img class="col-md-6" src="<?=$this->assetUrl('img/leaguepbe.png') ?>">
+        <p class="col-md-6">Le PBE à recu une nouvelle mis à jour! Alors que nous continuons le cycle du PBE 7.5, le mis à jour du 28 février inclus des modifications pour le skin Dragon Sorceress  de Zyra et des changements de balance plus tentatives.
+            
+        <br>    
+        <br> 
+        
+        Pour lire plus d'informations sur le patch du PBE, <a href="##">cliquez ici</a></p>
 
 
 
@@ -32,9 +41,16 @@
 
     <div class="col-md-12">
 
-        <p class="col-md-12 text-left">TITRE</p>
-        <img class="col-md-6" src="<?=$this->assetUrl('img/battlefield-event.jpg') ?>">
-        <p class="col-md-6">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
+        <br>
+        
+        <p class="col-md-12 text-left">Team Liquid sont vainqueurs du SL i-League StarSeries Saison 3</p>
+        <img class="col-md-6" src="<?=$this->assetUrl('img/liquidstar.jpg') ?>">
+        <p class="col-md-6">Team Liquid a fait face contre VG.J pour le titre SL i-League StarSeries Saison 3 et une invitantion potentielle pour le Kiev Major.
+
+            <br>
+            <br>
+            
+        La bataille pour le titre du SL i-League StarSeries Saison 3 est finie et les deux protagonistes, VG.J et Team Liquid, ont offert aux fans de Dota 2 une Grande Finale sensationelle pleine d'action. Découvre ce qui s'est passé aux cours de cette finale <a href="##">ici.</a>.</p>
 
 
 
