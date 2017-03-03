@@ -63,7 +63,7 @@
 
 
                             <li>
-                                <a href=""><i class="fa fa-list" aria-hidden="true"></i> Tous les utilisateurs</a>
+                                <a href="<?= $this->url('admin_listUser')"><i class="fa fa-list" aria-hidden="true"></i> Tous les utilisateurs</a>
                             </li>
                             <li>
                                 <a href=""><i class="fa fa-list" aria-hidden="true"></i> Ajouter un utilisateur</a>
