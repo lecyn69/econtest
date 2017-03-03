@@ -7,7 +7,7 @@
 <fieldset>
     <legend class="col-md-12">Top actus</legend>
     <p class="col-md-12">Retrouvez ici les dernières actualités </p>
-    <div class="col-md-12">
+    <div class="col-md-12 actif">
 
         <p class="col-md-12  ">Les Invités Du Kiev Major</p>
         <img class="col-md-6" src="<?=$this->assetUrl('img/kievmajor.png') ?>">
@@ -21,9 +21,10 @@ Les qualifications open pour le Kiev Major seront tenus du 6 au 9 Mars, et les q
 
 
 
+
     </div>
 
-    <div class="col-md-12">
+    <div class="col-md-12 actif">
 
         <p class="col-md-12 text-left">Mis à jour PBE: Changements au balance plus tentatives</p>
         <img class="col-md-6" src="<?=$this->assetUrl('img/leaguepbe.png') ?>">
@@ -39,7 +40,7 @@ Les qualifications open pour le Kiev Major seront tenus du 6 au 9 Mars, et les q
 
     </div>
 
-    <div class="col-md-12">
+    <div class="col-md-12 actif">
 
         <br>
         
