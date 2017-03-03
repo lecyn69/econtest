@@ -483,14 +483,6 @@ li:hover > ul.drop-menu.menu_4 li:nth-child(3) {
         /*width: 80px;*/
     }
 }
-
-
-
-.slider_home {
-    width:100%;
-    margin:auto;
-    margin-top: 30px;
-}
 @media screen and (max-width: 1024px){
     .reglage_imagehome {
         margin-left: 10px;
