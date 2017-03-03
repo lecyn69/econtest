@@ -455,7 +455,7 @@ li:hover > ul.drop-menu.menu_4 li:nth-child(3) {
 #container2 {
     transform: scale(0);
 }
-<<<<<<< HEAD
+
 
  .slider_home {
         width:100%;
@@ -502,11 +502,50 @@ legend {
     
     
 }
+/*****************************PAGE GAMES ***************************/
+#description{
+    background-color: #f8f8f8;
+}
+
+#gamelogo {
+    width: 171px;
+    height: 171px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#gamedesc {
+    display: inline-block;
+    width: 80%;
+    margin-left: 2%;
+    margin-top: 1.3%;
+}
+
+.tournaments{
+    border: 1px solid #333;
+    margin-top: 4%;
+    background-color: #f8f8f8;
+}
+
+#tourndesc{
+    width: 35%;
+    margin-left: 20px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+#tournlogo{
+    width: 60%;
+    height: 255px;
+    display: inline-block;
+    margin: auto;
+    float: right;
+}
+
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
-
 }
 
 /************************************FIN PAGE GAMES ****************************/
