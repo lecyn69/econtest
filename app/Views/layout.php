@@ -287,7 +287,7 @@
                         success: function(data){ // Si le status code est 200
                             console.log(data);
                             $('.modal-header').append('<p class="alert-success">'+data.message+'</p>');
-                            window.location.href = '<?= $this->url('admin_index'); ?>';
+                            window.location.href = '<?= $this->url('default_home'); ?>';
                         },
                         error: function(data){ // Si le status code n'est pas 200
                             //console.log(jqXhr);
