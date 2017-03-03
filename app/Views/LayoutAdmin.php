@@ -44,7 +44,10 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<?php echo $this->url('admin_index'); ?>"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+
+
+                    <a class="navbar-brand" href="<?php echo $this->url('admin_index'); ?>">E-Contest</a>
+
                 </div>
                 <div class="collapse navbar-collapse" id="mon-menu">
 
@@ -54,14 +57,8 @@
                         <li class="logout"><a href="<?= $this->url('admin_deconnexion') ?>"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
                     </ul>
-
-                    <!-- /.dropdown -->
-
-                    <!-- Fin de DIV id mon menu -->
-                </div>
-                <!-- Fin de container fluid -->
-            </div>
-        </nav>
+            </nav>
+           
 
 
         <div id="wrapper" class="active">
@@ -100,6 +97,7 @@
                     <div class="row">
                         <?= $this->section('main_content') ?>
                     </div>
+
                 </div>
             </div>
 

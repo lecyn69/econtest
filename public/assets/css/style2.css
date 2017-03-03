@@ -4,7 +4,7 @@
 body{
     background-color: #222222;
     background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px; 
-    color:black;
+    color: white;
 }
 .centered
 {
@@ -162,14 +162,12 @@ effet d'explosion du cube
     to { transform: rotateY(360deg) rotateZ(360deg); }
 }
 
-
 #slogan {
     position: relative;
+    top: -20px;
     color: red;
-    font-family: Calligraffitti;
     font-size: 2em;
-    text-align: center;
-    margin-bottom: 50px;
+    font-family: Calligraffitti;
     /*
     -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
     -moz-animation: neon1 1.5s ease-in-out infinite alternate;
@@ -180,8 +178,8 @@ p a:hover {
     color: #ffffff;
     text-decoration: none;
 }
-/*glow for webkit*/
 
+/*glow for webkit*/
 
 @-webkit-keyframes neon1 {
     from {
@@ -231,6 +229,7 @@ p a:hover {
 
 .recherche{
     width: 100%;
+    color: black;
 }
 #widget_d {
     border:2px solid black;
@@ -376,59 +375,265 @@ li:hover > ul.drop-menu.menu_4 li:nth-child(3) {
 
 /******************************** FIN NAVBAR***********************************/
 
-/**********************************Partie formulaire MODAL******************/
-.modal-title {
+
+
+/******************************** EVENTS **************************************/
+
+
+/* SLIDER */
+
+
+.nom {
+    font-size: 19pt;
+    color:#fff;
+    position: relative;
+    top: 20px;
+
+}
+
+.slider {
+    width: 75%;
+    margin:auto;
+    margin-top: 30px;
+
+
+}
+
+/************************************PARTIE HOME********************************/
+
+
+.onglet {
+
+    line-height: 50px;
+    cursor: pointer;
     color: black;
 }
-.modal {
-    margin-top: 10%;
+
+.article {
+    background-color: white;
+    color: black;
+    position: absolute;
+    transform: scale(0);
+    cursor: pointer;
 }
-/*****************************FIN FORM MODAL ********************************/
 
-/******************************PARTIE PAGE GAMES *****************************/
+.article-actif {
 
-#gamelogo {
-    width: 171px;
-    height: 171px;
+    transform: scale(1);
+
+}
+
+.mes_span {
+    /*width: 100px;*/
+    border: 2px solid black;
+    margin-left: 30px;
+}
+
+.div_align {
     display: inline-block;
-    vertical-align: top;
+    width: auto;
+    border: 2px solid black;
+    background-color:#930000;
+}
+.div_align:hover {
+    background-color:#930000; 
 }
 
-#gamedesc {
-    display: inline-block;
-    width: 80%;
-    margin-left: 2%;
-    margin-top: 1.3%;
-    color: white;
+.div_align_actif {
+
+    background-color: white;
 }
 
-.tournaments{
-    margin-top: 4%;
-    box-shadow: inset 0 3px 5px red;
+
+#container2 {
+    transform: scale(0);
 }
 
-#tourndesc{
-    width: 35%;
-    margin-left: 20px;
-    margin-top: 5px;
-    display: inline-block;
-    color: white;
+.slider_home {
+    width:100%;
+    margin:auto;
+    margin-top: 30px;
 }
-
-#tournlogo{
-    width: 60%;
-    height: 255px;
-    display: inline-block;
+.reglage_imagehome img{
     margin: auto;
-    float: right;
 }
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+
+#lire_la_suite {
+    cursor: pointer;
 }
+
+#lire_la_suite1 {
+    cursor: pointer;
+}
+
+
+
+/*PARTIE HOME RESPONSIVE*/
+@media screen and (max-width: 1440px){
+    .reglage_imagehome {
+        margin-left: 120px;
+    }
+}
+
+@media screen and (max-width: 1199px){
+    .reglage_imagehome {
+        margin-left: 0px;
+    }
+    .div_align {
+        /*width: 80px;*/
+    }
+}
+
+
+
+.slider_home {
+    width:100%;
+    margin:auto;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 1024px){
+    .reglage_imagehome {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .reglage_imagehome {
+        margin-left: -10px;
+    }
+    #lire_la_suite {
+        cursor: pointer;
+    }
+    #lire_la_suite1 {
+        cursor: pointer;
+    }
+    #lire_la_suite2 {
+        cursor: pointer;
+    }
+    #lire_la_suite3 {
+        cursor: pointer;
+
+    }
+
+}
+
+
+@media screen and (max-width: 425px){
+    #container1 {
+        transform: scale(0);
+    }
+
+    #container2 {
+        transform: scale(1); 
+    }
+
+    .reglage_imagehome {
+        margin-left: -10px;
+    }
+
+
+
+    .reglage_imagehome {
+        margin-left: -10px;
+    }
+    #lire_la_suite {
+        cursor: pointer;
+    }
+    #lire_la_suite1 {
+        cursor: pointer;
+    }
+
+    #lire_la_suite2 {
+        cursor: pointer;
+    }
+    #lire_la_suite3 {
+        cursor: pointer;
+    }
+}
+/***************************** SLIDER EVENEMENT**********************************************/
+
+.titre {
+    font-size: 40pt;
+    font-family: 'Lobster Two', cursive;
+    color: white;
+    text-shadow: 5px 5px 15px red;
+    text-align: center;
+}
+/*******************************FIN EVENTS *************************************/
+
+
+/*******************************ACTU *******************************************/
+
+legend {
+    font-size: 20pt;
+    font-family: 'Lobster Two', cursive;
+    color: white;
+
+}
+.actif {
+    box-shadow: -2px -3px 10px 4px white;
+    margin-bottom: 50px;
+    padding: 0px;
+}
+/*****************************FIN ACTU *****************************/
+/*****************************PAGE GAMES ***************************/
+
+#desc_logo {
+    font-size: 15pt;
+    padding:0px;
+    margin-left: 50px;
+    margin-top: 110px;
+}
+
+#logo {
+    padding:0px;
+    box-shadow: 3px 3px 3px 3px white;
+    width: 28%;
+    height: 380px;
+
+}
+
+#logo_desc {
+    margin-bottom: 50px;
+
+}
+
+#desc_eligue {
+    font-size: 12pt;
+    padding: 0px; 
+    margin-left: 20px;
+}
+
+#eligue {
+    margin-bottom: 50px;
+}
+
+#logo-eligue,#logo-tournoi {
+    padding: 0px;
+    border:2px solid red;
+}
+
+#desc_eligue, #desc_tournoi {
+    font-size: 11.5pt;
+}
+
+
+#desc_logo_entier {
+    font-size: 14pt;
+    padding:0px;
+
+    margin-top: 50px;
+}
+
 
 /************************************FIN PAGE GAMES ****************************/
+
+
+
+
+
+
 
 /*Neon*/
 #econtest {
@@ -456,6 +661,8 @@ a {
     -moz-animation: none;
     animation: none;
 }
+
+
 
 /********************SIDEBAR MENU ADMIN ***********************************/
 .logout {
@@ -604,3 +811,4 @@ a {
 .page-header {
     color: white;
 }
+
