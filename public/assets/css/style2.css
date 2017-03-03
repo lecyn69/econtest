@@ -394,7 +394,8 @@ li:hover > ul.drop-menu.menu_4 li:nth-child(3) {
 .slider {
     width: 75%;
     margin:auto;
-    margin-top: 30px;
+    margin-top: 30px; 
+    
 
 
 }
@@ -485,19 +486,10 @@ li:hover > ul.drop-menu.menu_4 li:nth-child(3) {
 }
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/master
-.slider_home {
-    width:100%;
-    margin:auto;
-    margin-top: 30px;
-}
-<<<<<<< HEAD
 .reglage_imagehome {
     margin-left: 140px;
-=======
+}
 @media screen and (max-width: 1024px){
     .reglage_imagehome {
         margin-left: 10px;
@@ -521,25 +513,19 @@ li:hover > ul.drop-menu.menu_4 li:nth-child(3) {
         cursor: pointer;
 
     }
->>>>>>> origin/master
+
 }
 
 
 @media screen and (max-width: 425px){
     #container1 {
         transform: scale(0);
+        
     }
 
     #container2 {
         transform: scale(1); 
     }
-<<<<<<< HEAD
-    .reglage_imagehome {
-        margin-left: -10px;
-    }
-=======
->>>>>>> origin/master
-
     .reglage_imagehome {
         margin-left: -10px;
     }
@@ -575,7 +561,7 @@ legend {
     font-size: 20pt;
     font-family: 'Lobster Two', cursive;
     color: white;
-<<<<<<< HEAD
+
 }
 .actif {
     box-shadow: -2px -3px 10px 4px white;
@@ -635,12 +621,7 @@ legend {
 
 /************************************FIN PAGE GAMES ****************************/
 
-=======
 
-
-}
-
->>>>>>> origin/master
 /*Neon*/
 #econtest {
     text-align: center;
