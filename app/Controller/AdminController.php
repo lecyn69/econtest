@@ -95,29 +95,5 @@ class AdminController extends Controller {
         $this->auth->logUserOut();
         $this->redirectToRoute('default_home');
     }
-    public function connexionAdmin(){
-
-
-        $user = $this->auth->isValidLoginInfo($_POST['pseudoOrEmail'], $_POST['pwd']);
-        if($user){
-            $this->auth->logUserIn($this->currentUser->find($user));
-            $this->redirectToRoute('default_home');
-        }else{
-            $_SESSION['error'] = 'Mot de passe ou email incorrect';
-            $this->redirectToRoute('default_home');
-        }
-    }
-
-    public function deconnexionAdmin(){
-        $this->auth->logUserOut();
-        $this->redirectToRoute('admin_index');
-    }
-
-
-
-
-
-
-
-
+  
 }
