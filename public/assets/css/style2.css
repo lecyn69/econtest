@@ -537,10 +537,16 @@ legend {
     color: white;
 
 }
+
 .actif {
     box-shadow: -2px -3px 10px 4px white;
     margin-bottom: 50px;
     padding: 0px;
+}
+/*****************************PAGE GAMES ***************************/
+#description{
+  /*  background-color: #f8f8f8;*/
+
 }
 /*****************************FIN ACTU *****************************/
 /*****************************PAGE GAMES ***************************/
@@ -560,8 +566,15 @@ legend {
 
 }
 
+
 #logo_desc {
     margin-bottom: 50px;
+}
+
+.tournaments{
+    border: 1px solid #333;
+    margin-top: 4%;
+/*    background-color: #f8f8f8;*/
 
 }
 
@@ -634,6 +647,7 @@ a {
 .nav-admin {
     width: auto;
 }
+
 
  /******************************** FIN NAV ADMIN *******************************/
 /****************************** PARTIE LIST USER ADMIN **********************/
