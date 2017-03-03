@@ -50,61 +50,38 @@
 
                 </div>
                 <div class="collapse navbar-collapse" id="mon-menu">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-admin">
+                            <a href="<?php echo $this->url('admin_index'); ?>">Home</a>
+                        </li>
+                        <li class="nav-admin">
+                            <a href="<?php echo $this->url('default_home'); ?>">Accès au site</a>
+                        </li>
 
-                    <ul class="nav navbar-nav navbar-right">
-
-
-                        <li class="logout"><a href="<?= $this->url('admin_deconnexion') ?>"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li class="nav-admin">
+                            <a href="<?= $this->url('admin_listUser') ?>">Tous les utilisateurs</a>
+                        </li>
+                        <li class="nav-admin">
+                            <a href="<?= $this->url('admin_addUser') ?>">Ajouter un administrateur</a>
                         </li>
                     </ul>
-            </nav>
-           
-
-
-        <div id="wrapper" class="active">
-            <!-- Sidebar -->
-            <!-- Sidebar -->
-            <div id="sidebar-wrapper">
-                <ul id="sidebar_menu" class="sidebar-nav">
-                    <li class="sidebar-brand sidebar-admin"><a id="menu-toggle" href="#">Menu<span id="main_icon" class="glyphicon glyphicon-align-justify"></span></a></li>
-                </ul>
-                <ul class="sidebar-nav active2" id="sidebar">     
-                    <li class="sidebar-admin">
-                        <a href="<?php echo $this->url('admin_index'); ?>"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
-                    </li>
-                    <li class="sidebar-admin">
-                        <a href="<?php echo $this->url('default_home'); ?>"><i class="fa fa-list" aria-hidden="true"></i> Accès au site</a>
-                    </li>
-
-                    <li class="sidebar-admin">
-                        <a href="<?= $this->url('admin_listUser') ?>"><i class="fa fa-list" aria-hidden="true"></i> Tous les utilisateurs</a>
-                    </li>
-                    <li class="sidebar-admin">
-                        <a href="<?= $this->url('admin_addUser') ?>"><i class="fa fa-list" aria-hidden="true"></i> Ajouter un administrateur</a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Page content -->
-            <div id="page-content-wrapper">
-                <!-- Keep all page content within the page-content inset div! -->
-                <div class="page-content inset">
-                    <div class="row">
-                        <div class="col-lg-10 col-lg-offset-1">
-                            <h1 class="page-header"><?= $this->e($title) ?></h1>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <?= $this->section('main_content') ?>
-                    </div>
-
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-admin"><a href="<?= $this->url('admin_deconnexion') ?>"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-
-
-
+        </nav>
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <h1 class="page-header"><?= $this->e($title) ?></h1>
+            </div>
         </div>
-        <!-- /#wrapper -->
+        <div class="row">
+            <?= $this->section('main_content') ?>
+        </div>
+
+
 
 
         <footer>
@@ -123,12 +100,6 @@
         <script src="<?= $this->assetUrl('vendor/datatables-responsive/dataTables.responsive.js') ?>"></script>
         <script src="<?= $this->assetUrl('dist/js/sb-admin-2.js') ?>"></script>
         <script type="text/javascript">
-            $(document).ready(function(){
-                $("#menu-toggle").click(function(e) {
-                    e.preventDefault();
-                    $("#wrapper").toggleClass("active");
-                });
-            });
         </script>
         <?= $this->section('script') ?>
 

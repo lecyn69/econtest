@@ -2,7 +2,7 @@
 
 <?php $this->start('main_content') ?>
 
-<form method="post" action="<?= $this->url('user_modifUser',['id' => $user['id']]); ?>">
+<form method="post" action="<?= $this->url('admin_modifUser',['id' => $user['id']]); ?>">
     <div class="col-md-6">
         <div class="row">
             <div class="form-group">

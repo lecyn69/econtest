@@ -41,8 +41,11 @@
                                 <input type="hidden" name="id" value="<?php echo $user['id']; ?>">
                                 <button type="submit" class="btn btn-danger">Supprimer</button>
                             </form>
-                           <a style="color:yellow" href="<?php echo $this->url('admin_modifUser',['id' => $user['id']]); ?>" class="btn btn-primary">Modifier</a>
-                        
+                            <form style="display: inline-block" method="post" action="<?php echo $this->url('admin_modifUser',['id' => $user['id']]); ?>">
+                                <input type="hidden" name="id" value="<?php echo $user['id']; ?>">
+                                <button type="submit" class="btn btn-primary">Modifier</button>
+                            </form>
+
                         </td>
                     </tr>
                     <?php } ?>
