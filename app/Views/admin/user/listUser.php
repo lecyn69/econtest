@@ -1,4 +1,4 @@
-<?php $this->layout('backend', ['title' => ' Gestion des utilisateurs']) ?>
+<?php $this->layout('LayoutAdmin', ['title' => ' Gestion des utilisateurs']) ?>
 
 <?php $this->start('main_content') ?>
 
@@ -18,8 +18,11 @@
                 <thead>
                     <tr>
                         <th>ID</th>
+                        <th>Nom</th>
+                        <th>Prénom</th>
                         <th>Pseudo</th>
                         <th>Email</th>
+                        <th>Rôle</th>
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -28,8 +31,11 @@
                     foreach($users as $user) { ?>
                     <tr>
                         <td><?php echo $user['id']; ?></td>
+                        <td><?php echo $user['nom']; ?></td>
+                        <td><?php echo $user['prenom']; ?></td>
                         <td><?php echo $user['pseudo']; ?></td>
                         <td><?php echo $user['email']; ?></td>
+                        <td><?php echo $user['role']; ?></td>
                         <td>
                             <form style="display: inline-block" method="post" action="<?php echo $this->url('user_deleteUser',['id' => $user['id']]); ?>">
                                 <input type="hidden" name="id" value="<?php echo $user['id']; ?>">

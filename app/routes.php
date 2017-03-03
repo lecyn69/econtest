@@ -23,8 +23,10 @@
         
         //*************************Partie administration*****************************//
         
-        ['GET', '/admin/', 'admin#index', 'admin_index'],
-        ['GET', '/admin/listUser/', 'user#listAllUser', 'admin_listUser'],
+        ['GET|POST', '/admin/', 'admin#index', 'admin_index'],
+        ['GET|POST', '/admin/listUser/', 'user#listAllUser', 'admin_listUser'],
+        ['GET|POST', '/admin/listUser/modifUser/', 'user#modifUser', 'admin_modifUser'],
+        ['GET|POST', '/admin/listUser/deleteUser/', 'user#deleteUser', 'admin_deleteUser'],
         ['GET|POST', '/inscription/', 'admin#inscription', 'admin_inscription'],
         ['GET|POST', '/connexion/', 'admin#connexion', $w_config['security_login_route_name']],
         ['GET|POST', '/deconnexion/', 'admin#deconnexion', 'admin_deconnexion'],
