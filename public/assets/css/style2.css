@@ -162,14 +162,12 @@ effet d'explosion du cube
     to { transform: rotateY(360deg) rotateZ(360deg); }
 }
 
-
 #slogan {
     position: relative;
+    top: -20px;
     color: red;
-    font-family: Calligraffitti;
     font-size: 2em;
-    text-align: center;
-    margin-bottom: 50px;
+    font-family: Calligraffitti;
     /*
     -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
     -moz-animation: neon1 1.5s ease-in-out infinite alternate;
@@ -231,6 +229,7 @@ p a:hover {
 
 .recherche{
     width: 100%;
+    color: black;
 }
 #widget_d {
     border:2px solid black;
@@ -376,6 +375,29 @@ li:hover > ul.drop-menu.menu_4 li:nth-child(3) {
 
 /******************************** FIN NAVBAR***********************************/
 
+
+/******************************** EVENTS **************************************/
+
+
+/* SLIDER */
+
+
+.nom {
+    font-size: 19pt;
+    color:#fff;
+    position: relative;
+    top: 20px;
+
+}
+
+.slider {
+    width: 75%;
+    margin:auto;
+    margin-top: 30px;
+
+
+}
+
 .onglet {
 
     line-height: 50px;
@@ -461,29 +483,24 @@ li:hover > ul.drop-menu.menu_4 li:nth-child(3) {
 
 /***************************** SLIDER EVENEMENT**********************************************/
 
-
-.nom {
-    font-size: 19pt;
-    color:#fff;
-    position: relative;
-    top: 20px;
-
-}
-
-
-.slider {
-    width:100%;
-    margin:auto;
-    margin-top: 30px;
-
-
-}
-
 .titre {
     font-size: 40pt;
     font-family: 'Lobster Two', cursive;
     color: white;
     text-shadow: 5px 5px 15px red;
+    text-align: center;
+}
+/*******************************FIN EVENTS *************************************/
+
+
+/*******************************ACTU *******************************************/
+
+legend {
+    font-size: 20pt;
+    font-family: 'Lobster Two', cursive;
+    color: white;
+    
+    
 }
 .clearfix::after {
     content: "";
