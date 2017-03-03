@@ -4,15 +4,15 @@
         <meta charset="UTF-8">
         <title><?= $this->e($title) ?></title>
 
-        <link rel="stylesheet" href="<?= $this->assetUrl('vendor/bootstrap/css/bootstrap.min.css') ?>">
         <link rel="stylesheet" href="<?= $this->assetUrl('vendor/metisMenu/metisMenu.min.css') ?>">
         <link rel="stylesheet" href="<?= $this->assetUrl('dist/css/sb-admin-2.css') ?>">
         <link rel="stylesheet" href="<?= $this->assetUrl('vendor/morrisjs/morris.css') ?>">
         <link rel="stylesheet" href="<?= $this->assetUrl('vendor/datatables-plugins/dataTables.bootstrap.css') ?>">
         <link rel="stylesheet" href="<?= $this->assetUrl('vendor/datatables-responsive/dataTables.responsive.css') ?>">
         <link rel="stylesheet" href="<?= $this->assetUrl('vendor/font-awesome/css/font-awesome.min.css') ?>">
-        <link rel="stylesheet" href="<?= $this->assetUrl('vendor/bootstrap/css/bootstrap.min.css') ?>">
+        <link rel="stylesheet" href="<?= $this->assetUrl('vendor/bootstrap/css/bootstrap.css') ?>">
         <link rel="stylesheet" href="<?= $this->assetUrl('css/style2.css') ?>">
+        <link href="https://fonts.googleapis.com/css?family=Calligraffitti|Monoton" rel="stylesheet">
 
     </head>
     <body>
@@ -44,7 +44,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<?php echo $this->url('default_home'); ?>"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                    <a class="navbar-brand" href="<?php echo $this->url('admin_index'); ?>"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
                 </div>
                 <div class="collapse navbar-collapse" id="mon-menu">
 
@@ -71,7 +71,7 @@
                 <ul id="sidebar_menu" class="sidebar-nav">
                     <li class="sidebar-brand sidebar-admin"><a id="menu-toggle" href="#">Menu<span id="main_icon" class="glyphicon glyphicon-align-justify"></span></a></li>
                 </ul>
-                <ul class="sidebar-nav" id="sidebar">     
+                <ul class="sidebar-nav active2" id="sidebar">     
                     <li class="sidebar-admin">
                         <a href="<?php echo $this->url('admin_index'); ?>"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
                     </li>
@@ -83,7 +83,7 @@
                         <a href="<?= $this->url('admin_listUser') ?>"><i class="fa fa-list" aria-hidden="true"></i> Tous les utilisateurs</a>
                     </li>
                     <li class="sidebar-admin">
-                        <a href=""><i class="fa fa-list" aria-hidden="true"></i> Ajouter un utilisateur</a>
+                        <a href="<?= $this->url('admin_addUser') ?>"><i class="fa fa-list" aria-hidden="true"></i> Ajouter un administrateur</a>
                     </li>
                 </ul>
             </div>
@@ -92,6 +92,11 @@
             <div id="page-content-wrapper">
                 <!-- Keep all page content within the page-content inset div! -->
                 <div class="page-content inset">
+                    <div class="row">
+                        <div class="col-lg-10 col-lg-offset-1">
+                            <h1 class="page-header"><?= $this->e($title) ?></h1>
+                        </div>
+                    </div>
                     <div class="row">
                         <?= $this->section('main_content') ?>
                     </div>

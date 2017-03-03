@@ -2,7 +2,7 @@
 
 <?php $this->start('main_content') ?>
 
-	<div class="col-lg-12">
+	<div class="col-lg-10 col-lg-offset-1">
     <div class="panel panel-default">
         <div class="panel-heading">
             Liste des Utilisateur
@@ -37,11 +37,11 @@
                         <td><?php echo $user['email']; ?></td>
                         <td><?php echo $user['role']; ?></td>
                         <td>
-                            <form style="display: inline-block" method="post" action="<?php echo $this->url('user_deleteUser',['id' => $user['id']]); ?>">
+                            <form style="display: inline-block" method="post" action="<?php echo $this->url('admin_deleteUser',['id' => $user['id']]); ?>">
                                 <input type="hidden" name="id" value="<?php echo $user['id']; ?>">
                                 <button type="submit" class="btn btn-danger">Supprimer</button>
                             </form>
-                           <a style="color:yellow" href="<?php echo $this->url('user_modifUser',['id' => $user['id']]); ?>" class="btn btn-primary">Modifier</a>
+                           <a style="color:yellow" href="<?php echo $this->url('admin_modifUser',['id' => $user['id']]); ?>" class="btn btn-primary">Modifier</a>
                         
                         </td>
                     </tr>

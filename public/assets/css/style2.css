@@ -531,7 +531,7 @@ a {
 
 .sidebar-nav li {
   line-height: 40px;
-  text-indent: 10px;
+  margin-left: 10px;
 }
 
 .sidebar-nav li a {
@@ -600,3 +600,7 @@ a {
 }
 
  /********************************FIN SIDEBAR ADMIN *******************************/
+/****************************** PARTIE LIST USER ADMIN **********************/
+.page-header {
+    color: white;
+}
